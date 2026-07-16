@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <!-- Link to the external CSS stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Main wrapper to center the calculator on the page with a stylish background -->
+    <div id="calculator-container" class="calculator-container">
+      <div id="calculator-card" class="calculator-card">
+        <!-- Brand/Header section for the calculator -->
+        <div id="calculator-header" class="calculator-header">
+          <span id="brand-name">CALCULATOR</span>
+          <div id="theme-accent-indicator"></div>
+        </div>
+
+        <!-- Display Screen section containing previous expression and current input -->
+        <div id="calculator-screen" class="calculator-screen">
+          <div id="display-history" class="display-history"></div>
+          <div id="display-current" class="display-current">0</div>
+        </div>
+
+        <!-- Keypad section utilizing a responsive CSS Grid -->
+        <div id="calculator-keypad" class="calculator-keypad">
+          <!-- Row 1: Actions & Division -->
+          <button id="btn-ac" class="btn btn-action" data-action="all-clear">AC</button>
+          <button id="btn-c" class="btn btn-action" data-action="clear">C</button>
+          <button id="btn-backspace" class="btn btn-action" data-action="backspace">⌫</button>
+          <button id="btn-divide" class="btn btn-operator" data-operator="/">÷</button>
+
+          <!-- Row 2: Numbers 7, 8, 9 & Multiplication -->
+          <button id="btn-7" class="btn btn-number" data-number="7">7</button>
+          <button id="btn-8" class="btn btn-number" data-number="8">8</button>
+          <button id="btn-9" class="btn btn-number" data-number="9">9</button>
+          <button id="btn-multiply" class="btn btn-operator" data-operator="*">×</button>
+
+          <!-- Row 3: Numbers 4, 5, 6 & Subtraction -->
+          <button id="btn-4" class="btn btn-number" data-number="4">4</button>
+          <button id="btn-5" class="btn btn-number" data-number="5">5</button>
+          <button id="btn-6" class="btn btn-number" data-number="6">6</button>
+          <button id="btn-subtract" class="btn btn-operator" data-operator="-">-</button>
+
+          <!-- Row 4: Numbers 1, 2, 3 & Addition -->
+          <button id="btn-1" class="btn btn-number" data-number="1">1</button>
+          <button id="btn-2" class="btn btn-number" data-number="2">2</button>
+          <button id="btn-3" class="btn btn-number" data-number="3">3</button>
+          <button id="btn-add" class="btn btn-operator" data-operator="+">+</button>
+
+          <!-- Row 5: Number 0, Decimal, Equals -->
+          <button id="btn-0" class="btn btn-number btn-span-2" data-number="0">0</button>
+          <button id="btn-decimal" class="btn btn-number" data-decimal=".">.</button>
+          <button id="btn-equals" class="btn btn-equals" data-action="calculate">=</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
+
